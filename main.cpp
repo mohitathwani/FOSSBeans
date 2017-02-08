@@ -33,6 +33,7 @@ int main() {
       break;
 
     case 'M':
+      cout << "Enter project name to be modified: " << endl;
       for (size_t i = 0; i < projects.size(); i++) {
         cout << i + 1 << ": " << projects[i]->getName() << endl;
       }
