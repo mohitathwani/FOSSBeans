@@ -6,7 +6,7 @@
 */
 #ifndef PROJECT_H
 #define PROJECT_H
-
+#include <string.h>
 class Project {
   private:
     int _submitted;
