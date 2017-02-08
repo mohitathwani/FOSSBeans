@@ -10,15 +10,15 @@
 class Project {
   private:
     int _submitted;
-	int _accepted;
-    string _name;
+    int _accepted;
+    std::string _name;
   public:
-    Project(string projectName);
+    Project(std::string projectName);
     void submitRequest();
-	void acceptRequest();
+    void acceptRequest();
     int getSubmittedRequests();
-	int getAcceptedRequests();
-	string getName();
+    int getAcceptedRequests();
+    std::string getName();
 }
 
 #endif
