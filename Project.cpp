@@ -1,31 +1,31 @@
 #include "project.h"
 
-Project::Project(std::string name) : name(name), submitted(0), accepted(0)
+Project::Project(std::string name) : _name(name), _submitted(0), _accepted(0)
 
 int Project::getRequests() 
 {
-  return submitted;
+  return _submitted;
 }
 
 int Project::getAcceptedRequests()
 {
-  return accepted;
+  return _accepted;
 }
 
 std::string Project::getName()
 {
-  return name;
+  return _name;
 }
 
 void Project::submitRequests()
 {
-  submitted++;
+  _submitted++;
 }
 
 void Project::acceptRequest()
 {
-  if(submitted < 1)
+  if(_submitted < 1)
     return;
-  submitted--;
-  accepted++;
+  _submitted--;
+  _accepted++;
 }
