@@ -2,9 +2,9 @@
 #include <vector>
 #include <string>
 
-#include "Project.h"
+#include "project.h"
 
-using namespace std:
+using namespace std;
 int main() {
 
   vector<Project *> projects;
@@ -29,7 +29,7 @@ int main() {
     case 'N':
       cout << "Enter name for the new project: " << endl;
       cin >> eneteredProjectName;
-      projects.push_back(new Poject(eneteredProjectName));
+      projects.push_back(new Project(eneteredProjectName));
       break;
 
     case 'M':

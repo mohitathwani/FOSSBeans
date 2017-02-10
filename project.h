@@ -1,4 +1,4 @@
-/* 
+/*
   @file: project.h
   @author:
 	Pinak Das
@@ -6,7 +6,7 @@
 */
 #ifndef PROJECT_H
 #define PROJECT_H
-#include <string.h>
+#include <string>
 class Project {
   private:
     int _submitted;
@@ -19,6 +19,8 @@ class Project {
     int getSubmittedRequests();
     int getAcceptedRequests();
     std::string getName();
-}
+    int getRequests();
+    void submitRequests();
+};
 
 #endif

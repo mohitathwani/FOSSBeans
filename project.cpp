@@ -1,8 +1,9 @@
 #include "project.h"
 
 Project::Project(std::string name) : _name(name), _submitted(0), _accepted(0)
+{}
 
-int Project::getRequests() 
+int Project::getRequests()
 {
   return _submitted;
 }

@@ -1,8 +1,10 @@
-fossbeans: Main.cpp Project.h
-	g++ main.cpp -o fossbeans
+fossbeans: main.o project.o
+	g++ main.o project.o -o fossbeans
 
-Project.o: Project.cpp Project.h
-	g++ -c Project.cpp
+main.o: main.cpp project.h
+	g++ -c main.cpp
+project.o: project.cpp project.h
+	g++ -c project.cpp
 
 clean:
-	rm -f Project.o fossbeans
+	rm -f project.o fossbeans
